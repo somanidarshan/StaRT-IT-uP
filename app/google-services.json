@@ -1,6 +1,9 @@
 {
   "project_info": {
     "project_number": "1034378595503",
+
+    "firebase_url": "https://start-it-up-7fd13-default-rtdb.firebaseio.com",
+
     "project_id": "start-it-up-7fd13",
     "storage_bucket": "start-it-up-7fd13.appspot.com"
   },
