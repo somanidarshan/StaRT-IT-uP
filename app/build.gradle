@@ -6,7 +6,7 @@ apply plugin: 'com.android.application'
 //}
 
 android {
-    compileSdk 32
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.example.start_it_up"
@@ -47,4 +47,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+    implementation "com.airbnb.android:lottie:3.4.0"
 }
