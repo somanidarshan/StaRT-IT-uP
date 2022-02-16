@@ -10,20 +10,22 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/IdUserName"
+        android:id="@+id/IdEmail"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:hint="UserName"/>
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
 
     <EditText
         android:id="@+id/IdPassword"
         android:layout_gravity="center"
         android:layout_margin="20dp"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="password"/>
+        android:hint="Password"/>
 
     <Button
         android:layout_width="wrap_content"

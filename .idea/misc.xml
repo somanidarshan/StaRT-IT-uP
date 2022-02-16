@@ -3,16 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
-        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_check.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_login.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_main2.xml" value="0.2526041666666667" />
-
         <entry key="..\:/StaRT-IT-uP/app/src/main/res/drawable/input_bg.xml" value="0.23229166666666667" />
         <entry key="..\:/StaRT-IT-uP/app/src/main/res/layout/activity_invester_signup.xml" value="0.21614583333333334" />
         <entry key="..\:/StaRT-IT-uP/app/src/main/res/layout/activity_startup_signup.xml" value="0.2" />
-
+        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_check.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_invester_signup.xml" value="0.264" />
+        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_login.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_main2.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abhishek Kandalkar/MyAndroidProjects/StaRT-IT-uP/app/src/main/res/layout/activity_startup_signup.xml" value="0.2526041666666667" />
       </map>
     </option>
   </component>

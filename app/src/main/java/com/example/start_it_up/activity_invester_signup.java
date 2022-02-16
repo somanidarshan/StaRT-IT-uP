@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -61,6 +62,11 @@ public class activity_invester_signup extends AppCompatActivity {
                 final String address=invester_address.getText().toString().trim();
                 final String password=invester_password.getText().toString().trim();
 
+                if(Patterns.EMAIL_ADDRESS.matcher(email).matches() && !email.isEmpty()){
+                    Toast.makeText(activity_invester_signup.this,"Email Verified.",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(activity_invester_signup.this,"Email not Verified.",Toast.LENGTH_SHORT).show();
+                }
                 if(TextUtils.isEmpty(name)){
                     invester_name.setError("Name is Required");
                     return;

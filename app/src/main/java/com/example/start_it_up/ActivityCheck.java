@@ -25,6 +25,7 @@ public class ActivityCheck extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ActivityCheck.this, LoginActivity.class);
                 intent.putExtra("StartUp", "1");
+                intent.putExtra("Investor", "0");
                 startActivity(intent);
             }
         });
@@ -34,6 +35,14 @@ public class ActivityCheck extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ActivityCheck.this, LoginActivity.class);
                 intent.putExtra("Investor", "2");
+                intent.putExtra("StartUp", "0");
+                startActivity(intent);
+            }
+        });
+        guestLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ActivityCheck.this, MainActivity.class);
                 startActivity(intent);
             }
         });

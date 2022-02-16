@@ -59,6 +59,7 @@
                 android:background="@drawable/input_bg"
                 android:hint="Email"
                 android:padding="5dp"
+                android:inputType="textEmailAddress"
                 android:textColorHint="#676666"
                 android:textSize="23sp">
 
@@ -73,6 +74,7 @@
                 android:background="@drawable/input_bg"
                 android:hint="Phone No"
                 android:padding="5dp"
+                android:inputType="number"
                 android:textColorHint="#676666"
                 android:textSize="23sp">
 
@@ -114,6 +116,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/input_bg"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:padding="5dp"
                 android:textColorHint="#676666"
                 android:textSize="23sp">

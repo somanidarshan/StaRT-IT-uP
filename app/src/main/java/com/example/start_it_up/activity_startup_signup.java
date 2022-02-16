@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,7 +34,6 @@ public class activity_startup_signup extends AppCompatActivity {
     private Button startup_register;
     private RadioButton radiobutton_yes;
     private RadioButton radiobutton_no;
-
     private ProgressDialog loader;
     private FirebaseAuth mAuth;
     private DatabaseReference userDatabaseRef;
@@ -67,7 +67,6 @@ public class activity_startup_signup extends AppCompatActivity {
                     checked="yes";
                 }
 
-
                 final String name=startup_name.getText().toString().trim();
                 final String phoneno=startup_phone.getText().toString().trim();
                 final String email=startup_email.getText().toString().trim();
@@ -76,6 +75,11 @@ public class activity_startup_signup extends AppCompatActivity {
                 final String password=startup_password.getText().toString().trim();
                 final String description=startup_Description.getText().toString().trim();
 
+                if(Patterns.EMAIL_ADDRESS.matcher(email).matches() && !email.isEmpty()){
+                    Toast.makeText(activity_startup_signup.this,"Email Verified.",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(activity_startup_signup.this,"Email not Verified.",Toast.LENGTH_SHORT).show();
+                }
                 if(TextUtils.isEmpty(name)){
                     startup_name.setError("Name is Required");
                     return;
@@ -131,23 +135,18 @@ public class activity_startup_signup extends AppCompatActivity {
                                 userInfo.put("Patent", finalChecked);
                                 userInfo.put("Description",description);
 
-
                                 userDatabaseRef.updateChildren(userInfo).addOnCompleteListener(new OnCompleteListener() {
                                     @Override
                                     public void onComplete(@NonNull Task task) {
                                         if(task.isSuccessful()){
-                                            Toast.makeText(activity_startup_signup.this, "Data set Successfully", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(activity_startup_signup.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                                         }else{
                                             Toast.makeText(activity_startup_signup.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
                                         }
-
                                         finish();
                                         loader.dismiss();
                                     }
                                 });
-
-
-
                             }
                         }
                     });
